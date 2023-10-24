@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.8em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+i {
+  color: hsl(9deg, 40%, 50%);
+}
+
+p.period {
+  color: hsl(9deg, 40%, 50%);
+  font-size: 0.9em;
+}
+p.period i {
+  margin-right: 1em;
+}
+
+section {
+  padding: 1.5rem 1rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #bbb;
+  margin-bottom: 2rem;
+}
+section .section-title {
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 400;
+}
+section .skill-name,
+section .subsection-title {
+  color: #999;
+}
+section .subsection-title {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .row .aside {
+    flex: 1 1 30%;
+  }
+  .row .main {
+    flex: 1 1 65%;
+  }
+}
+.about div {
+  position: relative;
+}
+.about div img.pic {
+  filter: grayscale(80%);
+  max-height: 50vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: linear-gradient(to right, red, green);
+}
+.about div p.name {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #ddd;
+  font-size: 1.8em;
+}
+
+.skills .outer-bar {
+  width: 90%;
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: #bbb;
+  margin: 0.5rem 0 1rem 0;
+}
+.skills .inner-bar {
+  width: 50%;
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: hsl(9deg, 40%, 50%);
+  text-align: center;
+  vertical-align: center;
+  font-style: 700;
+}
+.skills .w1 {
+  width: 20%;
+}
+.skills .w2 {
+  width: 40%;
+}
+.skills .w3 {
+  width: 60%;
+}
+.skills .w4 {
+  width: 80%;
+}
+.skills .w5 {
+  width: 100%;
+}
+.skills p.skill-name {
+  padding-top: 0.4rem;
+}
+.skills h2.lang {
+  margin-top: 2rem;
+}
+
+section.work-exp .section-item,
+section.education .section-item {
+  padding: 1rem 0;
+}
+section.work-exp .section-item + .section-item,
+section.education .section-item + .section-item {
+  border-top: 1px solid rgba(200, 200, 200, 0.3);
+}
+
+footer.footer {
+  padding: 3rem;
+  background: radial-gradient(#333, #999);
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

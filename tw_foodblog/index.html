@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>TW Template Food </title>
+</head>
+
+<body>
+    <header class="header flex justify-between items-center p-4">
+        <a class="" href="javascript:open_menu();">
+            <i class="fa fa-navicon" style="font-size:24px"></i></a>
+        <h1 class="text-4xl font-bold">My Food</h1>
+        <p>Mail</p>
+    </header>
+    <nav class="nav hidden">
+        <ul class="nav-menu absolute top-0 left-0 w-80 bg-white h-screen">
+            <li class="menu-item p-4 text-xl hover:bg-slate-300 cursor-pointer"><a href="javascript:close_menu();">Close Menu</a></li>
+            <li class="menu-item p-4 text-xl hover:bg-slate-300 cursor-pointer"><a class="menu-option" href="#food">Food</a></li>
+            <li class="menu-item p-4 text-xl hover:bg-slate-300 cursor-pointer"><a class="menu-option" href="#about">About</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container mx-auto divide-y-2">
+        <section id="food" class="food grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 px-2 md:px-0 py-8">
+            <div class="food-item  shadow-md rounded-xl overflow-hidden">
+                <img src="img/bowl of ramen.jpg" alt="Bowl of Ramen" class="food-pic h-64 w-full object-cover">
+                <h2 class="food-name text-lg text-center font-bold pt-2">A Bowl of Ramen</h2>
+                <p class="food-desc text-sm text-center  pb-4 px-6 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolores</p>
+            </div>
+            <div class="food-item shadow-md rounded-xl overflow-hidden">
+                <img src="img/chicken burger.jpg" alt="Chicken Burger" class="food-pic h-64 w-full object-cover">
+                <h2 class="food-name  text-lg text-center font-bold pt-2">Chicken Burger</h2>
+                <p class="food-desc  text-sm text-center  pb-4 px-6 text-slate-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, temporibus?</p>
+            </div>
+            <div class="food-item shadow-md rounded-xl overflow-hidden">
+                <img src="img/dumplings.jpg" alt="Dumplings" class="food-pic  h-64 w-full object-cover">
+                <h2 class="food-name text-lg text-center font-bold pt-2">Perfect Dumplings</h2>
+                <p class="food-desc  text-sm text-center  pb-4 px-6 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magni.</p>
+            </div>
+            <div class="food-item shadow-md rounded-xl overflow-hidden">
+                <img src="img/fruits.jpg" alt="Fruit" class="food-pic  h-64 w-full object-cover">
+                <h2 class="food-name text-lg text-center font-bold pt-2">Delicious Fruits to eat</h2>
+                <p class="food-desc  text-sm text-center  pb-4 px-6 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, consectetur.
+                </p>
+            </div>
+            <div class="food-item  shadow-md rounded-xl overflow-hidden">
+                <img src="img/Gobi Manchuri.jpg" alt="Gobi Manchuri" class="food-pic  h-64 w-full object-cover">
+                <h2 class="food-name text-lg text-center font-bold pt-2">Spicy Gobi Manchuri</h2>
+                <p class="food-desc  text-sm text-center  pb-4 px-6 text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem.</p>
+            </div>
+            <div class="food-item  shadow-md rounded-xl overflow-hidden">
+                <img src="img/khamesh.jpg" alt="Khamesh" class="food-pic  h-64 w-full object-cover">
+                <h2 class="food-name text-lg text-center font-bold pt-2">Handlicking Khamesh</h2>
+                <p class="food-desc  text-sm text-center  pb-4 px-6 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, non.</p>
+            </div>
+            <div class="food-item shadow-md rounded-xl overflow-hidden">
+                <img src="img/pancake.jpg" alt="Pancakes" class="food-pic  h-64 w-full object-cover">
+                <h2 class="food-name text-lg text-center font-bold pt-2">Humble Pancakes</h2>
+                <p class="food-desc  text-sm text-center  pb-4 px-6 text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, sint?</p>
+            </div>
+            <div class="food-item shadow-md rounded-xl overflow-hidden">
+                <img src="img/salad.jpg" alt="Salad" class="food-pic  h-64 w-full object-cover">
+                <h2 class="food-name text-lg text-center font-bold pt-2">Who doesn't want the Salad</h2>
+                <p class="food-desc  text-sm text-center  pb-4 px-6 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, deleniti!</p>
+            </div>
+        </section>
+
+
+        <section id="about" class="about py-16 text-center space-y-4">
+            <h2 class="section-title text-3xl text-center mb-8">About me, the Food man</h2>
+            <img src="img/cook.jpg" alt="" class="rounded-lg w-full max-h-96 object-cover object-top">
+            <p class="section-intro text-2xl ">I am Who I am!</p>
+            <p class="section-italics text-slate-600 italic">With Passion of Cooking</p>
+            <p class="section-detl text-sm text-justify max-w-3xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dignissimos ipsa
+                accusamus dolore, illo error magni enim, cumque ab omnis animi laudantium? Nam vel fugit numquam atque,
+                sint
+                cumque alias ex fuga deleniti, pariatur, repellat dolor aperiam nesciunt est laboriosam? Laborum
+                voluptatum
+                beatae labore quae quidem consectetur, doloremque minus esse!</p>
+
+        </section>
+
+
+        <footer class="footer py-8 px-4 space-y-8 md:space-y-0 md:grid md:grid-cols-3 md:gap-2">
+            <section class="footer-sec grow space-y-4">
+                <h2 class="footer-title text-xl">FOOTER</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolorem.</p>
+                <p class="copy">Powered by Tailwind</p>
+            </section>
+            <section class="blog-posts grow space-y-4">
+                <h2 class="footer-title text-xl">BLOG POSTS</h2>
+                <div class="blog-post-item flex gap-2">
+                    <img src="img/fruits.jpg" alt="" class="h-12 w-10 object-cover">
+                    <div>
+                        <p class="post-title text-sm">Lorem</p>
+                        <p class="post-intro text-sm">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="blog-post-item flex gap-2">
+                    <img src="img/khamesh.jpg" alt="" class="h-12 w-10 object-cover">
+                    <div>
+                        <p class="post-title text-sm">Ipsum</p>
+                        <p class="post-intro text-sm">Lorem ipsum dolor sit amet..</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular-tag grow">
+                <h2 class="footer-title text-xl mb-3">POPULAR TAGS</h2>
+                <div class="flex gap-1 flex-wrap">
+                    <span class="tag text-xs bg-black text-white p-1 rounded-lg">Travel</span><span class="tag text-xs bg-black text-white p-1 rounded-lg">New York</span><span class="tag text-xs bg-black text-white p-1 rounded-lg">Great food</span><span
+                    class="tag text-xs bg-black text-white p-1 rounded-lg">Chicken</span><span class="tag text-xs bg-black text-white p-1 rounded-lg">Khamesh</span><span class="tag text-xs bg-black text-white p-1 rounded-lg">Cuisine</span><span
+                    class="tag text-xs bg-black text-white p-1 rounded-lg">Dressing</span><span class="tag text-xs bg-black text-white p-1 rounded-lg">Fish</span>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+        nav = document.querySelector("nav.nav");
+        function close_menu() {
+            nav.style.display = 'none';
+        }
+
+        function open_menu() {
+            nav.style.display = 'block';
+
+        }
+
+        const menuOptions = document.querySelectorAll(".menu-option");
+        menuOptions.forEach((opt) => {
+            console.log(opt);
+            opt.addEventListener('click', () => {
+                console.log('clicked');
+                close_menu();
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-Band</title>
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .active{
+            display:  block;
+        }
+
+        .carousel-wrapper {
+            display: flex;
+        }
+
+        .slide {
+            flex: 0 0 100%; /* Adjust this width according to your needs */
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <header class="bg-black text-white md:flex justify-between">
+        <div class="md:flex relative">
+            <div class="flex justify-between ">
+                <div class="logo p-4 md:block hover:font-bold hover:bg-slate-500"><a href="">HOME</a></div>
+                <button id="bars" class="font-bold md:hidden py-4 px-6 hover:font-bold hover:bg-slate-500" ><i class="fa fa-bars"></i></button>
+            </div>
+            <nav id="menu" class="hidden md:flex absolute md:relative z-10 bg-black w-full transition-all duration-500">
+                <a href="#band" class="block md:inline-block p-4 hover:font-bold hover:bg-slate-500">BAND</a>
+                <a href="#tour" class="block md:inline-block p-4 hover:font-bold hover:bg-slate-500">TOUR</a>
+                <a href="#contact" class="block md:inline-block p-4 hover:font-bold hover:bg-slate-500">CONTACT</a>
+                <a href="" class="block md:inline-block p-4 hover:font-bold hover:bg-slate-500">MERCH</a>
+            </nav>
+        </div>
+        <div class="hidden md:block p-4">Search</div>
+    </header>
+
+
+
+
+    <section class="hero">
+        <div class="carousel-container relative overflow-hidden">
+            <div class="carousel-wrapper flex transition-transform ease-in-out duration-500">
+              <div class="w-full slide">
+                <img src="img/band1.jpg" alt="Image 1" class="w-full h-96 object-cover">
+              </div>
+              <div class="w-full slide">
+                <img src="img/band2.jpg" alt="Image 2" class="w-full h-96 object-cover">
+              </div>
+              <div class="w-full slide">
+                <img src="img/band3.jpg" alt="Image 3" class="w-full h-96 object-cover">
+              </div>
+            </div>
+            <div class="">
+                <button class="carousel-next  absolute top-2/3 left-4 bg-black text-white p-2 font-bold uppercase rounded-2xl">Next</button>
+                <button class="carousel-prev absolute top-1/3 left-4 bg-black text-white p-2 font-bold uppercase rounded-2xl">Prev</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="band" class="band section py-10 px-2">
+        <div class="max-w-2xl  text-center mx-auto space-y-4">
+            <div class="relative" id="falling-heading-container">
+                <h1 class="text-3xl uppercase tracking-widest" id="falling-heading">The Band</h1>
+            </div>
+            
+            <p class="section__desc heading-desc font-light">We love music</p>
+            <div class="band-body text-sm text-justify">
+                <p>This is a fictional band website. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium, incidunt sapiente. Aperiam vitae hic ad facere laboriosam reiciendis deserunt
+                    distinctio non saepe dolor asperiores exercitationem, ratione numquam temporibus libero natus
+                    voluptates earum optio ea nihil. Adipisci quod voluptatem fugiat culpa temporibus ad, rem nobis
+                    earum accusantium qui hic natus distinctio vitae aliquam consequatur quae consequuntur reprehenderit
+                    sint velit quidem provident reiciendis delectus quibusdam. Deleniti dolor nihil qui, esse
+                    repudiandae error porro necessitatibus cum nulla ratione numquam labore odit natus reiciendis
+                    provident magni, quam quasi magnam beatae obcaecati quidem rerum dolorum sunt ex. Ut pariatur velit
+                    vero exercitationem officiis beatae expedita?</p>
+            </div>
+
+            <div class="band-members flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="member border-2 p-2 hover:border-4 rounded-lg bg-slate-100 inline-block border-2">
+                    <h3 class="font-bold text-lg">AJ McLean</h3>
+                    <img class="w-full h-48" src="img/aj mclean.jpeg" alt="">
+                </div>
+                <div class="member border-2 p-2 hover:border-4 rounded-lg bg-slate-100 inline-block">
+                    <h3 class="font-bold text-lg">Kevin Richardson</h3>
+                    <img class="w-full h-48" src="img/kevin richardson.jpeg" alt="">
+                </div>
+                <div class="member border-2 p-2 hover:border-4 rounded-lg bg-slate-100 block">
+                    <h3 class="font-bold text-lg">Nick Carter</h3>
+                    <img class="w-full h-48" src="img/nick carter.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tour" class="tour section py-14 px-2 bg-black text-white">
+        <div class="max-w-2xl md:mx-auto text-center space-y-4">
+            <h2 class="text-3xl tracking-widest uppercase">Tour Dates</h2>
+            <p class="section__desc heading-desc font-light">Remember to book your tickets!</p>
+
+            <div class="slots__section">
+                <div class="slots flex bg-white px-3 py-2 border">
+                    <p class="slot-details text-slate-500 mr-5">September</p>
+                    <p class="bg-pink-500 p-1 text-sm rounded">Sold out</p>
+                </div>
+                <div class="slots flex bg-white px-3 py-2 border">
+                    <p class="slot-details text-slate-500 mr-5">October</p>
+                    <p class="bg-pink-500 p-1 text-sm rounded">Sold out</p>
+                </div>
+                <div class="slots flex bg-white px-3 py-2 border">
+                    <p class="slot-details text-slate-500 mr-5">November</p>
+                    <p class="status"></p>
+                </div>
+            </div>
+
+
+            <div class="space-y-4 md:space-y-0 md:flex md:gap-3 text-left md:text-center">
+                <div class="tour-location bg-white text-black pb-4">
+                    <img class="w-full h-48 object-cover mb-4" src="img/new york.jpeg" alt="">
+                    <div class="space-y-3 pl-4 md:pl-0">
+                        <h3 class="tour-name font-bold uppercase">New York</h3>
+                        <p class="tour-date font-light text-sm">Fri 27, Nov 2016</p>
+                        <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            laboriosam.
+                        </p>
+                        <a href="" class="btn-buy-tickets text-sm  uppercase  font-bold px-4 py-2 rounded bg-black hover:bg-slate-600 hover:translate-x-1 transition duration-300 transform  text-white inline-block">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="tour-location bg-white text-black pb-4">
+                    <img class="w-full h-48 object-cover mb-4" src="img/paris.jpeg" alt="">
+                    <div class="space-y-3 pl-4 md:pl-0">
+                        <h3 class="tour-name font-bold uppercase">Paris</h3>
+                        <p class="tour-date font-light text-sm">Sun 29, Nov 2016</p>
+                        <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            laboriosam.
+                        </p>
+                        <a href="" class="btn-buy-tickets text-sm  uppercase  font-bold px-4 py-2 rounded bg-black hover:bg-slate-600 hover:translate-x-1 transition duration-300 transform  text-white inline-block">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="tour-location bg-white text-black pb-4">
+                    <img class="w-full h-48 object-cover mb-4" src="img/london.jpeg" alt="">
+                    <div class="space-y-3 pl-4 md:pl-0">
+                        <h3 class="tour-name font-bold uppercase">London</h3>
+                        <p class="tour-date font-light text-sm">Fri 27, Nov 2016</p>
+                        <p class="tour-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            laboriosam.
+                        </p>
+                        <a href="" class="btn-buy-tickets text-sm  uppercase  font-bold px-4 py-2 rounded bg-black hover:bg-slate-600 hover:translate-x-1 transition duration-300 transform  text-white inline-block">Buy Tickets</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section py-14 px-2">
+        <div class="max-w-2xl md:mx-auto text-center space-y-4">
+            <h2 class="section__title heading text-3xl uppercase tracking-widest">Contact</h2>
+            <p class="font-light">Fan? Drop a note!</p>
+
+            <div class="space-y-6 md:space-y-0 md:flex md:gap-2">
+                <div class="text-left text-slate-700">
+                    
+                    <p class=""><i class="fa fa-envelope"></i>&nbsp;&nbsp;Bengaluru, India</p>
+                    
+                    <p class="contact-method"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Phone: #91-9538295937</p>
+                    
+                    <p class="contact-method"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Email: suraj.oliver@gmail.com</p>
+                </div>
+                <form class="space-y-2" action="mailto:suraj.oliver@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                    <div class="space-y-2 md:space-y-0 md:flex md:gap-2">
+                        <input class="border px-2 py-1 w-full" type="text" name="name" id="name" placeholder="Name">
+                        <input class="border px-2 py-1 w-full" type="text" name="email" id="email" placeholder="Email">
+                    </div>
+                    <input class="border px-2 py-1 w-full" type="text" name="message" id="message" placeholder="Message">
+
+                    <div class="text-right">
+                    <input class="font-bold py-2 px-4 bg-black hover:bg-slate-600 text-white rounded text-sm hover:translate-x-1 transition duration-300 transform  text-white inline-block" type="submit" name="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <img class="w-full h-96 object-cover" src="img/nagarbhavi.png" alt="" >
+
+    
+    <footer class="p-8 text-center">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <i class="fa fa-twitter"></i>
+        <p>Powered by Rayz</p>
+    </footer>
+
+
+    <script>
+
+        const bars = document.getElementById("bars");
+        const menu = document.getElementById("menu");
+        console.log(bars);
+        bars.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            console.log(menu);
+
+        })
+
+
+    class Carousel {
+        constructor(selector, interval = 3000) {
+            this.carouselWrapper = document.querySelector(selector);
+            this.slides = Array.from(this.carouselWrapper.children);
+            this.interval = interval;
+            this.currentIndex = 0;
+            this.totalSlides = this.slides.length;
+            this.init();
+        }
+
+        showSlide(index) {
+            const translateValue = `translateX(${-index * 100}%)`;
+            this.carouselWrapper.style.transform = translateValue;
+            this.currentIndex = index;
+        }
+
+        nextSlide() {
+            this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
+            this.showSlide(this.currentIndex);
+        }
+
+        prevSlide() {
+            this.currentIndex = (this.currentIndex - 1 + this.totalSlides) % this.totalSlides;
+            this.showSlide(this.currentIndex);
+        }
+
+        startAutoScroll() {
+            this.intervalId = setInterval(() => {
+            this.nextSlide();
+            }, this.interval);
+        }
+
+        stopAutoScroll() {
+            clearInterval(this.intervalId);
+        }
+
+        init() {
+            this.showSlide(this.currentIndex);
+
+            document.querySelector('.carousel-next').addEventListener('click', () => {
+            this.nextSlide();
+            this.stopAutoScroll();
+            });
+
+            document.querySelector('.carousel-prev').addEventListener('click', () => {
+            this.prevSlide();
+            this.stopAutoScroll();
+            });
+
+            this.startAutoScroll();
+        }
+    }
+
+    // Usage
+    const myCarousel = new Carousel('.carousel-wrapper', 3000);
+
+
+    const fallingHeading = document.getElementById('falling-heading');
+    const headingContainer = document.getElementById('falling-heading-container');
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const containerHeight = headingContainer.offsetHeight;
+
+        if(scrollPosition > containerHeight) {
+            fallingHeading.classList.remove('translate-y-full');
+        } else {
+            fallingHeading.classList.add('translate-y-full');
+        }
+    });
+
+        // const slides = document.querySelectorAll('.slide');
+        // let currentSlide = 0;
+
+        // function showSlide(index){
+        //     const translateValue = -(index * 100) + '%';
+        //     slides.forEach((slide) => {
+        //         slide.style.transform = `translateX(${translateValue})`;
+        //     });
+        //     currentSlide = index;
+
+        //     console.log('Current slide: ', currentSlide);
+        // }
+
+        // function nextSlide(){
+        //     currentSlide = (currentSlide + 1) % slides.length;
+        //     showSlide(currentSlide);
+        // }
+
+        // setInterval(nextSlide, 3000);
+
+        // const carousel = document.querySelector('.carousel');
+        // const carouselInner = document.querySelector('.carousel-inner');
+        // const carouselItems = document.querySelectorAll('.carousel-item');
+        // let currentIndex = 0;
+
+        // document.getElementById('nextBtn').addEventListener('click', () => {
+        //     currentIndex = (currentIndex + 1) % carouselItems.length;
+        //     updateCarousel(carouselItems, currentIndex);
+        // });
+
+        // document.getElementById('prevBtn').addEventListener('click', () => {
+        //     currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        //     updateCarousel(carouselItems, currentIndex);
+        // });
+
+        // updateCarousel(carouselItems, 0);
+        
+        // function updateCarousel(carouselItems, currentIndex) {
+        //     console.log('update carousel', carouselItems, currentIndex);
+            
+        //     carouselItems.forEach((slide, indx) =>{
+        //         slide.style.transform = `translateX(${100 * (indx - currentIndex)}%)`;
+        //     });
+        //     // const translateValue = -currentIndex * carouselItems[0].offsetWidth;
+        //     // console.log('translate value: ', translateValue);
+        //     // carousel.style.transform = `translateX(${translateValue}px)`;
+        // }
+    </script>
+</body>
+
+</html>

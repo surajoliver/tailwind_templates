@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+$accent-color: hsl(9, 40, 50);
+$primary-color: #333;
+$primary-greyed: #999;
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $primary-color;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+i {
+    color: $accent-color;
+}
+
+p.period {
+    color: $accent-color;
+    font-size: .9em;
+
+    i {
+        margin-right: 1em;
+    }
+}
+
+section {
+    padding: 1.5rem 1rem;
+    box-shadow: .1rem .1rem .1rem .1rem #bbb;
+    margin-bottom: 2rem;
+
+    .section-title {
+        margin-bottom: 1rem;
+        color: #333;
+        font-weight: 400;
+
+    }
+
+    .skill-name,
+    .subsection-title {
+        color: $primary-greyed;
+    }
+
+    .subsection-title {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 600px) {
+    .row {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .aside {
+            flex: 1 1 30%;
+        }
+
+        .main {
+            flex: 1 1 65%;
+        }
+    }
+
+}
+
+
+.about div {
+    position: relative;
+    //margin-bottom: 50vh;
+
+    img.pic {
+        filter: grayscale(80%);
+        max-height: 50vh;
+        object-fit: contain;
+        background: linear-gradient(to right, red, green);
+    }
+
+    p.name {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        color: #ddd;
+        font-size: 1.8em;
+    }
+}
+
+
+.skills {
+
+    .outer-bar {
+        width: 90%;
+        height: 1rem;
+        border-radius: 1rem;
+        background-color: #bbb;
+        margin: .5rem 0 1rem 0;
+    }
+
+    .inner-bar {
+        width: 50%;
+        height: 1rem;
+        border-radius: 1rem;
+        background-color: $accent-color;
+        text-align: center;
+        vertical-align: center;
+        font-style: 700;
+    }
+
+    .w1 {
+        width: 20%;
+    }
+
+    .w2 {
+        width: 40%;
+    }
+
+    .w3 {
+        width: 60%;
+    }
+
+    .w4 {
+        width: 80%;
+    }
+
+    .w5 {
+        width: 100%;
+    }
+
+    p.skill-name {
+        padding-top: .4rem;
+
+    }
+
+    h2.lang {
+        margin-top: 2rem;
+    }
+}
+
+section.work-exp,
+section.education {
+    .section-item {
+        padding: 1rem 0;
+    }
+
+    .section-item+.section-item {
+        border-top: 1px solid rgba(200, 200, 200, .3);
+
+    }
+}
+
+
+footer.footer {
+    padding: 3rem;
+    background: radial-gradient($primary-color, $primary-greyed);
+    text-align: center;
+    color: white;
+}

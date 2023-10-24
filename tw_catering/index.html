@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet"> 
+    <title>Template Catering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: 'Abyssinica SIL', serif;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header tracking-widest flex justify-between p-4 absolute sticky top-0 shadow-lg bg-white">
+        <a href="#" class="nav-item">
+            <p class="logo ">Kwality Catering</p>
+        </a>
+        <nav class="hidden md:flex gap-8 text-sm">
+            <a href="#about" class="nav-item">About</a>
+            <a href="#our-menu" class="nav-item">Menu</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero relative">
+        <img class="w-full h-screen md:max-h-80 object-cover" src="img/hero-catering.jpg" alt="">
+        <p class="logo absolute p-4 bg-white text-zinc-600 bottom-16 md:bottom-4 left-4 text-2xl font-bold opacity-60">Kwality Catering</p>
+    </div>
+
+    <section class="about py-8 text-center" id="about">
+        <div class="container flex m-auto gap-4 text-zinc-700">
+            <img src="img/about-catering.jpg" alt="" class="about-img hidden md:inline-block w-2/6 object-cover">
+            <div>
+                <h2 class="section-title text-4xl tracking-widest my-4">About Catering</h2>
+                <p class="intro mb-8">Tradion since 2001</p>
+                <div class="about-body text-justify space-y-4">
+                    <p>Kwalety catering was founded by Rajeev in 2001. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing
+                        elit.
+                        Neque voluptas corporis eligendi suscipit quasi perspiciatis quod! Voluptates maiores ea quo
+                        pariatur
+                        asperiores earum ad nostrum facilis rerum exercitationem! Obcaecati nulla excepturi maxime iure!
+                    </p>
+                    <p class="text-zinc-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis velit aspernatur
+                        cupiditate in reiciendis voluptatum laudantium explicabo vitae, vero dignissimos atque culpa
+                        dicta
+                        molestiae pariatur sed tempore libero? Deleniti rem culpa dignissimos soluta voluptate vitae
+                        dolores
+                        reiciendis dolore iste? Quam omnis mollitia nostrum qui nam magni ducimus voluptatum dignissimos
+                        nisi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-menu py-8" id="our-menu">
+        <div class="container md:grid md:grid-cols-2 m-auto gap-4">
+            <div>
+                <h2 class="section-title text-center text-4xl tracking-widest my-4">Our Menu</h2>
+                <ul class="menu-list space-y-3">
+                    <li class="menu-item">
+                        <h3 class="font-bold tracking-widest text-lg text-zinc-700">Chicken Biryani</h3>
+                        <p class="text-sm text-zinc-500">Chicken biryani prepared by our best chef with best quality chicken and rice</p>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="font-bold tracking-widest text-lg text-zinc-700">Onion Raitha</h3>
+                        <p class="text-sm text-zinc-500">Raitha made from curd and onions</p>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="font-bold tracking-widest text-lg text-zinc-700">Kadla Curry</h3>
+                        <p class="text-sm text-zinc-500">Kadla curry fried with coconut and vegetables</p>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="font-bold tracking-widest text-lg text-zinc-700">Chicken Kabab</h3>
+                        <p class="text-sm text-zinc-500">Chicken fried in coconut oil</p>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="font-bold tracking-widest text-lg text-zinc-700">Ice Cream</h3>
+                        <p class="text-sm text-zinc-500">Ice cream served with chocolate and a single sweet</p>
+                    </li>
+                </ul>
+            </div>
+            <img class="border-2 w-full h-full object-cover block" src="img/menu-catering.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="contact py-8 mx-2 md:mx-0 " id="contact">
+        <div class="container mx-auto">
+            <h2 class="section-title  text-center text-4xl tracking-widest my-4">Contact</h2>
+            <div class="contact-body space-y-4">
+                <p class="text-justify">We offer Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae adipisci harum
+                    architecto,
+                    tempore quia explicabo quas dolores cumque mollitia quasi libero, voluptatum, nihil exercitationem
+                    natus
+                    illum qui unde quo quam.</p>
+                <p class="address text-blue-600 font-bold">24th Richmond Town, Bengaluru</p>
+                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, hic? Aliquid amet harum earum
+                    voluptatibus porro unde alias itaque eum?</p>
+            </div>
+            <form action="" class="contact-form mt-4 space-y-2">
+
+
+                <input class="w-full border px-4 py-2" type="text" name="name" id="name" placeholder="Name">
+                <input class="w-full border px-4 py-2" type="text" name="people_count" id="people_count" placeholder="How many people">
+                <input class="w-full border px-4 py-2" type="datetime-local" name="date_time" id="date_time" placeholder="Date and time"
+                    value="2024-01-01T20:00">
+                <input class="w-full border px-4 py-2" type="text" name="message" id="message" placeholder="Message or Special requirements">
+                <input class="px-4 py-3 bg-zinc-300 hover:bg-zinc-400 hover:shadow-xl cursor-pointer rounded" type="submit" value="Send Message">
+
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer bg-zinc-200 py-5 text-center">
+        <p class="copy">Powered by Rayz</p>
+    </footer>
+
+</body>
+
+</html>

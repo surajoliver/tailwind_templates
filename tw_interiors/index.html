@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Interior Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+<body>
+    <header class="header bg-red-500 text-white relative ">
+        <div class="flex items-center md:hidden text-2xl p-2">
+            <a class="hover:bg-slate-700 px-4 py-2 inline-block" href="javascript:open_menu();"><i class="fa fa-bars"></i></a>
+            <p class="logo ml-8">Company Name</p>
+        </div>
+        <nav class="nav hidden md:block fixed top-0 left-0 z-20 bg-red-500 h-screen" id="myNav">
+            <ul class="nav__list" role="list">
+                <li class="nav__item md:hidden text-xl hover:bg-slate-400 text-center py-2"><a href="javascript:close_menu();">Close Menu</a></li>
+                <p class="logo text-2xl px-4 py-8">Company Name</p>
+                <li class="nav__item text-xl mx-2 hover:bg-white hover:text-black py-1 px-4"><a href="">Home</a></li>
+                <li class="nav__item text-xl mx-2 hover:bg-white hover:text-black py-1 px-4"><a href="">Showcase</a></li>
+                <li class="nav__item text-xl mx-2 hover:bg-white hover:text-black py-1 px-4"><a href="">Services</a></li>
+                <li class="nav__item text-xl mx-2 hover:bg-white hover:text-black py-1 px-4"><a href="">Designers</a></li>
+                <li class="nav__item text-xl mx-2 hover:bg-white hover:text-black py-1 px-4"><a href="">Package</a></li>
+                <li class="nav__item text-xl mx-2 hover:bg-white hover:text-black py-1 px-4"><a href="">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="main md:ml-64">
+        <section class="showcase p-4">
+            <h1 class="title text-7xl font-bold tracking-tighter">Interior Design</h1>
+            <h2 class="sub-title text-5xl text-red-500 font-bold my-8 ">Showcase<span class="block w-16 mt-6 border-4 border-red-500"></span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <img class="min-h-40 max-h-96 w-full object-cover" src="img/jonathan-borba-EnZaPhgS6KY-unsplash.jpg" alt="" class="items">
+                <img class="min-h-40 max-h-96 w-full object-cover" src="img/kam-idris-_HqHX3LBN18-unsplash.jpg" alt="">
+                <img class="min-h-40 max-h-96 w-full object-cover" src="img/spacejoy-h2_3dL9yLpU-unsplash.jpg" alt="">
+                <img class="min-h-40 max-h-96 w-full object-cover" src="img/kam-idris-_HqHX3LBN18-unsplash.jpg" alt="">
+                
+            </div>
+
+
+        </section>
+
+        <section class="services p-4">
+            <h2 class="sub-title text-5xl text-red-500 font-bold my-8">Services<span class="block w-16 mt-6 border-4 border-red-500"></span></h2>
+            <div class="body-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores hic impedit facilis voluptatem, minus
+                    veniam? Neque delectus vel odio commodi.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum rem minima, aperiam tenetur iusto
+                    eveniet excepturi voluptates molestias. Laborum doloremque exercitationem pariatur eum, dolorem unde
+                    quos itaque? Qui explicabo voluptatibus laboriosam libero dignissimos maiores necessitatibus, id itaque
+                    mollitia voluptas rem perspiciatis totam ea, accusamus nemo ducimus sunt, amet nulla!</p>
+            </div>
+        </section>
+
+        <section class="designers p-4">
+            <h2 class="sub-title text-5xl text-red-500 font-bold my-8">Designers<span class="block w-16 mt-6 border-4 border-red-500"></span></h2>
+            <div class="body-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit deserunt maiores, necessitatibus
+                architecto vero culpa sapiente nisi sequi temporibus quasi soluta aut iure ipsum nulla eos dolorem hic
+                nesciunt.
+            </div>
+            <div class="designers-card grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+                <div class="card bg-slate-100 text-justify">
+                    <img class="w-full h-32 object-cover" src="img/designer1.jpg" alt="">
+                    <div class="px-3 py-2">
+                        <p class="title text-center font-bold mb-2 text-xl">John Doe</p>
+                        <p class="text-slate-600 mb-2">CEO and Founder</p>
+                        <p class="text text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, neque.</p>
+                    </div>
+                </div>
+                <div class="card bg-slate-100 text-justify">
+                    <img class="w-full h-32 object-cover" src="img/designer2.jpg" alt="">
+                    <div class="px-3 py-2">
+                        <p class="title text-center font-bold mb-2 text-xl">John Doe</p>
+                        <p class="text-slate-600 mb-2">Designer</p>
+                        <p class="text text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, neque.</p>
+                    </div>
+                </div>
+                <div class="card bg-slate-100 text-justify">
+                    <img class="w-full h-32 object-cover" src="img/designer3.jpg" alt="">
+                    <div class="px-3 py-2">
+                        <p class="title text-center font-bold mb-2 text-xl">John Doe</p>
+                        <p class="text-slate-600 mb-2">Designer</p>
+                        <p class="text text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, neque.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="packages p-4">
+            <h2 class="sub-title text-5xl text-red-500 font-bold my-8">Packages.<span class="block w-16 mt-6 border-4 border-red-500"></span></h2>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus laudantium eos, dolorem
+                tempore libero inventore beatae optio deserunt? Quos, vel.</p>
+            
+            <div class="grid md:grid-cols-2 mt-4 gap-4">
+                <div class="card bg-slate-100 text-center">
+                    <h3 class="card__title bg-slate-700 text-white p-4">Basic</h3>
+                    <p class="card_feature p-3 border-b-2">Floorplanning</p>
+                    <p class="card_feature p-3 border-b-2">10 hours support</p>
+                    <p class="card_feature p-3 border-b-2">Photography</p>
+                    <p class="card_feature p-3 border-b-2">20% furniture discount</p>
+                    <p class="card_feature p-3 border-b-2">Good deals</p>
+                    <p class="card_feature p-4 border-b-2 text-3xl">$ 199 <span class="text-sm block text-slate-600">per room</span></p>
+                    <div class="p-3">
+                        <a href="" Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!class="card__btn px-4 py-2 border border-slate-300 inline-block hover:bg-slate-700 hover:text-slate-100 shadow">Sign Up</a>
+                    </div>
+                    
+                </div>
+                <div class="card bg-slate-100 text-center">
+                    <h3 class="card__title bg-red-500 text-white p-4">Pro</h3>
+                    <p class="card_feature p-3 border-b-2">Floorplanning</p>
+                    <p class="card_feature p-3 border-b-2">50 hours support</p>
+                    <p class="card_feature p-3 border-b-2">Photography</p>
+                    <p class="card_feature p-3 border-b-2">50% furniture discount</p>
+                    <p class="card_feature p-3 border-b-2">GREAT deals</p>
+                    <p class="card_feature p-4 border-b-2 text-3xl">$ 299 <span class="text-sm block text-slate-600">per room</span></p>
+                    <div class="p-3">
+                        <a href="" class="card__btn px-4 py-2 border text-red-500 border-red-500 inline-block hover:bg-red-700 hover:text-red-100 shadow">Sign UP</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact p-4">
+            <h2 class="sub-title text-5xl text-red-500 font-bold my-8">Contact.<span class="block w-16 mt-6 border-4 border-red-500"></span></h2>
+            <p class="text mb-2">Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+            <form class="block" action="" method="post">
+                <label for="name">Name</label>
+                <input class="block border-2 border-slate-300 w-full px-3 py-1 mb-2" type="text" name="name" id="name">
+                <label for="name">Email</label>
+                <input class="block border-2 border-slate-300 w-full px-3 py-1 mb-2" type="text" name="email" id="email">
+                <label for="name">Message</label>
+                <input class="block border-2 border-slate-300 w-full px-3 py-1 mb-3" type="text" name="message" id="message">
+                <input class="px-3 py-2 bg-red-500 text-white block w-full uppercase font-bold text-sm tracking-wider" type="submit" value="Send Message">
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="p-6 text-center">
+        <p class="">Powered by Tailwindcss.</p>
+        <p> Copyright Rayz</p>
+    </footer>
+
+    <script>
+        var myNav = document.querySelector("#myNav");
+        function open_menu() {
+            if (myNav.style.display === 'block') {
+                myNav.style.display = 'none';
+            } else {
+                myNav.style.display = 'block';
+            }
+        }
+
+        function close_menu() {
+            myNav.style.display = 'none';
+        }
+    </script>
+
+
+</body>
+
+</html>
